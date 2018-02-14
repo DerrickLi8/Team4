@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Agile_Project(1)", ".", "{47BDA807-A08E-429A-9512-3CE819DD7DD5}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_25830"
+		Debug.AspNetCompiler.PhysicalPath = "D:\Agile_Project\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_25830\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_25830"
+		Release.AspNetCompiler.PhysicalPath = "D:\Agile_Project\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_25830\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "25830"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47BDA807-A08E-429A-9512-3CE819DD7DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47BDA807-A08E-429A-9512-3CE819DD7DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26993D2C-A646-437B-A6A1-F17113370844}
+	EndGlobalSection
+EndGlobal
