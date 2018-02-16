@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="row">
+    <div class="row">   
         <div class="col-md-4">
             <h2>In (To be Signed)</h2>
             <p>
@@ -13,13 +13,14 @@
             <p>
                 <input id="File1" type="file" /></p>
         </div>
+
         <div class="col-md-4">
             <h2>Out (Signed)</h2>
             <p>
                 <asp:DropDownList ID="DropDownList1" runat="server">
-                    <asp:ListItem>RIS</asp:ListItem>
-                    <asp:ListItem>Associate Dean</asp:ListItem>
-                    <asp:ListItem>Dean</asp:ListItem>
+                    <asp:ListItem>Excel 1</asp:ListItem>
+                    <asp:ListItem>Excel 2</asp:ListItem>
+                    <asp:ListItem>Excel 3</asp:ListItem>
                 </asp:DropDownList>
             </p>
             <p>
