@@ -14,14 +14,9 @@ public partial class _Default : Page
         string connString = ConfigurationManager.ConnectionStrings["DatabaseConnection"].ConnectionString;
 
         SqlConnection conn = new SqlConnection(connString);
-        try
-        {
-            conn.Open();
-        }
-        catch (Exception f)
-        {
-            Console.WriteLine(f.ToString());
-        }
+
+        conn.Open();
+
         conn.Close();
 
     }
