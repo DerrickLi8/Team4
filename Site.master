@@ -6,13 +6,23 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title>Home Page</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <style type="text/css">
+        .auto-style1 {
+            float: left;
+            padding: 15px 15px;
+            font-size: xx-large;
+            line-height: 20px;
+            color: white;
+        }
+    </style>
 
 </head>
 <body>
@@ -46,19 +56,17 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <p class="auto-style1" runat="server" href="~/">Research Finance Signing System</p>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                <li><a runat="server" href="~/">Home</a></li>
+                                <li><a runat="server" href="~/About">About</a></li>
+                                <li><a runat="server" href="~/Contact">Contact</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
