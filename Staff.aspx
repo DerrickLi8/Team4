@@ -2,11 +2,14 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="row">   
+    <div class="row">
+        <div class="col-md-4">
+            <h1 id="userName" runat="server">Welcome, </h1>
+        </div>
         <div class="col-md-4">
             <h2>In (To be Signed)</h2>
             <p>
-                <asp:CheckBoxList ID="CheckBoxList1" runat="server" OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged">
+                <asp:CheckBoxList ID="CheckBoxList1" runat="server">
                     <asp:ListItem>Sample Excel File</asp:ListItem>
                 </asp:CheckBoxList>
             </p>
@@ -28,7 +31,6 @@
             <p>
                 &nbsp;</p>
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Register &raquo;</a></p>
         </div>
     </div>
 </asp:Content>

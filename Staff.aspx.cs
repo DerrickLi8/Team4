@@ -9,11 +9,7 @@ public partial class _Default : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        userName.InnerText = "Welcome, " + Request.QueryString["name"];
     }
 
-    protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
-    {
-
-    }
 }

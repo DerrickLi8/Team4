@@ -36,7 +36,8 @@ public partial class _Default : Page
         if (loginReader.HasRows)
         {
             //login was successful
-            Response.Redirect("Staff.aspx?name=" + loginReader.GetString(0) + "&position=" + loginReader.GetString(1));
+            loginReader.Read();
+            Response.Redirect("Staff.aspx?name=" + loginReader.GetString(1) + "&staffID=" + loginReader.GetString(0) + "&position=" + loginReader.GetString(4));
         }
         else
         {
