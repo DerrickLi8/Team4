@@ -8,7 +8,7 @@
             <p>
                 StaffID</p>
             <p>
-                <asp:TextBox ID="LoginStaffID_textbox" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="LoginStaffID_textbox" runat="server"></asp:TextBox>
             </p>
             <p>
                 Password</p>
