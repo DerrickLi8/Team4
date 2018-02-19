@@ -50,30 +50,20 @@ public partial class _Default : Page
 
     protected void register_click(object sender, EventArgs e)
     {
+        Register_btn.Text = "button clicked";
+
         string staffID = RegisterStaffID_textbox.Text;
         string firstName = RegisterFirstName_textbox.Text;
         string lastName = RegisterLastName_textbox.Text;
         string password = RegisterPassword_textbox.Text;
         string position = RegisterPosition_DropDownList.Text;
 
-        MySql.Data.MySqlClient.MySqlCommand registerCommand = new MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users VALUES(" + staffID + ", " +  firstName + ", " + lastName + ", " + password + ", " + position + ");", conn);
-
-        registerCommand.ExecuteNonQuery();
+        MySql.Data.MySqlClient.MySqlCommand registerCommand = new MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users VALUES('8', 'test', 'test', 'test', 'RIS')", conn);
 
         conn.Open();
 
+        registerCommand.ExecuteNonQuery();
 
-        if (registerCommand.ExecuteNonQuery()>0)
-        {
-            //register was successful
-            Register_btn.Text = "register successful";
-
-        }
-        else
-        {
-            //register was unsuccessful
-
-        }
 
         conn.Close();
 

@@ -52,7 +52,7 @@
                 </asp:DropDownList>
             </p>
             <p>
-                <asp:button class="btn btn-default" ID="Register_btn" runat="server"  Text="Register" ></asp:button>
+                <asp:button class="btn btn-default" ID="Register_btn" runat="server"  OnClick="register_click" Text="Register" ></asp:button>
             </p>
         </div>
     </div>
