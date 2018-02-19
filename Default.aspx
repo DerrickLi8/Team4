@@ -16,7 +16,7 @@
                 <asp:TextBox ID="LoginPassword_textbox" runat="server"></asp:TextBox>
             </p>
             <p>
-                <asp:button class="btn btn-default" OnClick="login_click" href="https://go.microsoft.com/fwlink/?LinkId=301948" runat="server" Text="Login"></asp:button>
+                <asp:button class="btn btn-default" OnClick="login_click" runat="server" Text="Login"></asp:button>
             </p>
         </div>
         <div class="col-md-4">
@@ -46,12 +46,13 @@
             <p>
                 <asp:DropDownList ID="RegisterPosition_DropDownList" runat="server">
                     <asp:ListItem>RIS</asp:ListItem>
+                    <asp:ListItem>Researcher</asp:ListItem>
                     <asp:ListItem>Associate Dean</asp:ListItem>
                     <asp:ListItem>Dean</asp:ListItem>
                 </asp:DropDownList>
             </p>
             <p>
-                <asp:button ID="Register_btn" runat="server"  Text="Register" ></asp:button>
+                <asp:button class="btn btn-default" ID="Register_btn" runat="server"  Text="Register" ></asp:button>
             </p>
         </div>
     </div>

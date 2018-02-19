@@ -36,7 +36,7 @@ public partial class _Default : Page
         if (loginReader.HasRows)
         {
             //login was successful
-            Response.Redirect("Staff.asp");
+            Response.Redirect("Staff.aspx");
         }
         else
         {
@@ -56,7 +56,7 @@ public partial class _Default : Page
         string password = RegisterPassword_textbox.Text;
         string position = RegisterPosition_DropDownList.Text;
 
-        MySql.Data.MySqlClient.MySqlCommand registerCommand = new MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users VALUES"+staffID +  firstName + lastName + password + position + "; ", conn);
+        MySql.Data.MySqlClient.MySqlCommand registerCommand = new MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users VALUES(" + staffID + ", " +  firstName + ", " + lastName + ", " + password + ", " + position + ");", conn);
 
         registerCommand.ExecuteNonQuery();
 
@@ -66,7 +66,7 @@ public partial class _Default : Page
         if (registerCommand.ExecuteNonQuery()>0)
         {
             //register was successful
-            Response.Write("<script LANGUAGE='JavaScript' >alert('Register Successful')</script>");
+            Register_btn.Text = "register successful";
 
         }
         else
