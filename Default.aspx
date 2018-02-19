@@ -24,27 +24,27 @@
             <p>
                 StaffID</p>
             <p>
-                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <asp:TextBox ID="RegisterStaffID_textbox" runat="server"></asp:TextBox>
             </p>
             <p>
                 First Name</p>
             <p>
-                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                <asp:TextBox ID="RegisterFirstName_textbox" runat="server"></asp:TextBox>
             </p>
             <p>
                 Last Name</p>
             <p>
-                <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                <asp:TextBox ID="RegisterLastName_textbox" runat="server"></asp:TextBox>
             </p>
             <p>
                 Password</p>
             <p>
-                <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                <asp:TextBox ID="RegisterPassword_textbox" runat="server"></asp:TextBox>
             </p>
             <p>
                 Position</p>
             <p>
-                <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:DropDownList ID="RegisterPosition_DropDownList" runat="server">
                     <asp:ListItem>RIS</asp:ListItem>
                     <asp:ListItem>Associate Dean</asp:ListItem>
                     <asp:ListItem>Dean</asp:ListItem>

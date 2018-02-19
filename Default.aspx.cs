@@ -48,5 +48,36 @@ public partial class _Default : Page
     }
 
 
+    protected void register_click(object sender, EventArgs e)
+    {
+        string staffID = RegisterStaffID_textbox.Text;
+        string firstName = RegisterFirstName_textbox.Text;
+        string lastName = RegisterLastName_textbox.Text;
+        string password = RegisterPassword_textbox.Text;
+        string position = RegisterPosition_DropDownList.Text;
+
+        MySql.Data.MySqlClient.MySqlCommand registerCommand = new MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users VALUES"+staffID +  firstName + lastName + position + "; ", conn);
+
+        registerCommand.ExecuteNonQuery();
+
+        conn.Open();
+
+
+        if (registerCommand.ExecuteNonQuery()>0)
+        {
+            //register was successful
+            Response.Write("<script LANGUAGE='JavaScript' >alert('Register Successful')</script>");
+
+        }
+        else
+        {
+            //register was unsuccessful
+
+        }
+
+        conn.Close();
+
+    }
+
 
 }
