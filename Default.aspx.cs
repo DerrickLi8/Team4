@@ -50,22 +50,28 @@ public partial class _Default : Page
 
     protected void register_click(object sender, EventArgs e)
     {
-        Register_btn.Text = "button clicked";
-
         string staffID = RegisterStaffID_textbox.Text;
         string firstName = RegisterFirstName_textbox.Text;
         string lastName = RegisterLastName_textbox.Text;
         string password = RegisterPassword_textbox.Text;
         string position = RegisterPosition_DropDownList.Text;
 
-        MySql.Data.MySqlClient.MySqlCommand registerCommand = new MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users VALUES('8', 'test', 'test', 'test', 'RIS')", conn);
+        if(RegisterStaffID_textbox.Text.Equals("") | RegisterFirstName_textbox.Text.Equals("") | RegisterLastName_textbox.Equals("") | RegisterPassword_textbox.Text.Equals(""))
+        {
+            string script = "alert(\"Please Make sure none of the text fields are empty.\");";
+            ScriptManager.RegisterStartupScript(this, GetType(),
+                                  "ServerControlScript", script, true);
 
-        conn.Open();
+        }
+        else
+        {
+            MySql.Data.MySqlClient.MySqlCommand registerCommand = new MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users VALUES('" + staffID + "', '" + firstName + "', '" + lastName + "', '" + password + "', '" + position + "')", conn);
 
-        registerCommand.ExecuteNonQuery();
-
+            conn.Open();
+            registerCommand.ExecuteNonQuery();
 
         conn.Close();
+        }
 
     }
 
