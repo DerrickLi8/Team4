@@ -16,7 +16,7 @@
                 <asp:TextBox ID="LoginPassword_textbox" runat="server"></asp:TextBox>
             </p>
             <p>
-                <a class="btn btn-default" OnClick="login_click" href="https://go.microsoft.com/fwlink/?LinkId=301948">Login &raquo;</a>
+                <asp:button class="btn btn-default" OnClick="login_click" id="loginButton" runat="server" Text="Login"></asp:button>
             </p>
         </div>
         <div class="col-md-4">
