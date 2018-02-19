@@ -51,7 +51,7 @@
                 </asp:DropDownList>
             </p>
             <p>
-                <asp:button class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Register &raquo;</asp:button>
+                <asp:button ID="Register_btn" runat="server"  Text="Register" ></asp:button>
             </p>
         </div>
     </div>

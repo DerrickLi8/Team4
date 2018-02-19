@@ -56,7 +56,7 @@ public partial class _Default : Page
         string password = RegisterPassword_textbox.Text;
         string position = RegisterPosition_DropDownList.Text;
 
-        MySql.Data.MySqlClient.MySqlCommand registerCommand = new MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users VALUES"+staffID +  firstName + lastName + position + "; ", conn);
+        MySql.Data.MySqlClient.MySqlCommand registerCommand = new MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users VALUES"+staffID +  firstName + lastName + password + position + "; ", conn);
 
         registerCommand.ExecuteNonQuery();
 
@@ -78,6 +78,8 @@ public partial class _Default : Page
         conn.Close();
 
     }
+
+
 
 
 }
