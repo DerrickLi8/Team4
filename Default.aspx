@@ -16,7 +16,7 @@
                 <asp:TextBox ID="LoginPassword_textbox" runat="server"></asp:TextBox>
             </p>
             <p>
-                <asp:button class="btn btn-default" OnClick="login_click" id="loginButton" runat="server" Text="Login"></asp:button>
+                <a class="btn btn-default" OnClick="login_click" href="https://go.microsoft.com/fwlink/?LinkId=301948">Login &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
@@ -51,7 +51,7 @@
                 </asp:DropDownList>
             </p>
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Register &raquo;</a>
+                <asp:button class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Register &raquo;</asp:button>
             </p>
         </div>
     </div>
