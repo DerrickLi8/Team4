@@ -8,15 +8,15 @@
             <p>
                 StaffID</p>
             <p>
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="LoginStaffID_textbox" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
             </p>
             <p>
                 Password</p>
             <p>
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="LoginPassword_textbox" runat="server"></asp:TextBox>
             </p>
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Login &raquo;</a>
+                <a class="btn btn-default" OnClick="login_click" href="https://go.microsoft.com/fwlink/?LinkId=301948">Login &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
